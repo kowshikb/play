@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "testOtherConfigFile": "npx playwright test --config=configurations/check.config.js --project=chr --headed",
+    "demotodo": "npx playwright test tests-examples/demo-todo-app.spec.js --config=configurations/check.config.js --project=chr --headed",
+    "report": "npx playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
